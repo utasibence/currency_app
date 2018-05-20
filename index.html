@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUF Váltó</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6  mx-auto ">
+        <h1 class="display-3 mb-5 text-center">Valutaváltó</h1>
+        <form>
+          <div class="form-group">
+            <input id="EUR_input" type="number" class="form-control form-control-lg text-center" placeholder="EUR">
+            <p class="lead text-center">
+              <button id="action_button" type="button" class="btn btn-lg btn-primary btn-block mt-2 mb-5">Átváltás</button>
+            </p>
+          </div>
+        </form>
+        <div class="output">
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h4>HUF:</h4>
+              <img src="flags/hungary.png" alt="Hungary flag" class="float-right flags">
+              <div id="HUF_output"></div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h4>USD:</h4>
+              <img src="flags/usa.png" alt="USA flag" class="float-right flags">
+              <div id="USD_output"></div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h4>GBP:</h4>
+              <img src="flags/united-kingdom.png" alt="United-Kingdom flag" class="float-right flags">
+              <div id="GBP_output"></div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h4>RSD:</h4>
+              <img src="flags/serbia.png" alt="Serbia flag" class="float-right flags">
+              <div id="RSD_output"></div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h4>RON:</h4>
+              <img src="flags/romania.png" alt="Romania flag" class="float-right flags">
+              <div id="RON_output"></div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h4>HRK:</h4>
+              <img src="flags/croatia.png" alt="Croatia flag" class="float-right flags">
+              <div id="HRK_output"></div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h4>CZK:</h4>
+              <img src="flags/czech.png" alt="Czech flag" class="float-right flags">
+              <div id="CZK_output"></div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h4>UAH:</h4>
+              <img src="flags/ukraine.png" alt="Ukraine flag" class="float-right flags">
+              <div id="UAH_output"></div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h4>DKK:</h4>
+              <img src="flags/denmark.png" alt="Denmark flag" class="float-right flags">
+              <div id="DKK_output"></div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="card-body">
+              <h4>CHF:</h4>
+              <img src="flags/switzerland.png" alt="Switzerland flag" class="float-right flags">
+              <div id="CHF_output"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
+</html>

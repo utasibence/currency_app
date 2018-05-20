@@ -1,0 +1,12 @@
+body {
+  margin-top: 30PX;
+  background: url(pattern.png);
+}
+
+.output {
+  visibility: hidden;
+}
+
+.flags {
+  width: 30px;
+}
